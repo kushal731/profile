@@ -1,0 +1,45 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #121212; color: #e0e0e0; }
+
+/* Navbar */
+header { background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); padding: 1rem; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { color: #00b4d8; font-size: 1.5rem; }
+nav ul { list-style: none; display: flex; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: #e0e0e0; text-decoration: none; transition: 0.3s; }
+nav ul li a:hover { color: #00b4d8; }
+
+/* Hero */
+.hero { height: 100vh; background: url('images/hero-dark.jpg') center/cover no-repeat; position: relative; }
+.overlay { background: rgba(0,0,0,0.7); height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center; }
+.overlay h2 { font-size: 3rem; color: #00b4d8; }
+.overlay button { margin-top: 1rem; padding: 12px 25px; background: #00b4d8; border: none; color: white; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+.overlay button:hover { background: #0077b6; }
+
+/* Sections */
+section { padding: 3rem 2rem; max-width: 1000px; margin: auto; }
+h2 { margin-bottom: 1rem; color: #00b4d8; }
+
+/* Skills */
+.skills-list { display: flex; flex-wrap: wrap; gap: 15px; }
+.skills-list li { background: #1f1f1f; color: #00b4d8; padding: 10px 15px; border-radius: 5px; }
+
+/* Projects */
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.project-card { background: #1f1f1f; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); transition: 0.3s; }
+.project-card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.7); }
+
+/* Contact */
+form { display: flex; flex-direction: column; gap: 15px; }
+input, textarea { padding: 10px; border: 1px solid #333; border-radius: 5px; background: #1f1f1f; color: #e0e0e0; }
+button { background: #00b4d8; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+button:hover { background: #0077b6; }
+
+/* Footer */
+footer { text-align: center; background: #0f2027; color: #e0e0e0; padding: 1rem; }
+
+/* Animations */
+.fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-in-out; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
